@@ -419,17 +419,51 @@ La nube puede ser más segura que almacenar datos localmente, ya que los proveed
           <div className="absolute inset-0 bg-gradient-to-r from-[#DC2626]/80 via-[#F59E0B]/60 to-[#2563EB]/80"></div>
         </div>
         
-        <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
-          <h1 className="mb-6">Blog Tecnológico</h1>
-          <p className="mb-8 text-xl">
+        <div className="relative z-10 text-center text-white px-4 max-w-6xl mx-auto">
+          <h1 className="mb-6 animate-fade-in">Blog Tecnológico</h1>
+          <p className="mb-12 text-xl animate-fade-in-delayed">
             Un espacio dedicado a explorar la innovación tecnológica, computación en la nube y transformación digital en la educación superior
           </p>
+
+          {/* Feature Cards */}
+          <div className="grid md:grid-cols-3 gap-6 mb-12">
+            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20 animate-slide-up">
+              <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                <BookOpen className="w-6 h-6 text-white" />
+              </div>
+              <h3 className="text-lg font-semibold mb-2">Artículos Especializados</h3>
+              <p className="text-white/90 text-sm">
+                Contenido técnico detallado sobre servicios en la nube y tendencias digitales
+              </p>
+            </div>
+
+            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20 animate-slide-up-delayed">
+              <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Users className="w-6 h-6 text-white" />
+              </div>
+              <h3 className="text-lg font-semibold mb-2">Comunidad Académica</h3>
+              <p className="text-white/90 text-sm">
+                Espacio para estudiantes, profesores e investigadores en tecnología educativa
+              </p>
+            </div>
+
+            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20 animate-slide-up-more-delayed">
+              <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Award className="w-6 h-6 text-white" />
+              </div>
+              <h3 className="text-lg font-semibold mb-2">Innovación Continua</h3>
+              <p className="text-white/90 text-sm">
+                Exploramos las últimas tendencias en tecnología y su impacto en la educación
+              </p>
+            </div>
+          </div>
+
           <button
             onClick={() => {
               const element = document.getElementById("articulos");
               if (element) element.scrollIntoView({ behavior: "smooth" });
             }}
-            className="bg-white text-[#DC2626] px-8 py-3 rounded-lg hover:bg-gray-100 transition-colors"
+            className="bg-white text-[#DC2626] px-8 py-3 rounded-lg hover:bg-gray-100 transition-colors hover:scale-105 transform duration-200"
           >
             Explorar Artículos
           </button>
