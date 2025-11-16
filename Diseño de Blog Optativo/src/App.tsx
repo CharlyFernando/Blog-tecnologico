@@ -419,8 +419,9 @@ La nube puede ser más segura que almacenar datos localmente, ya que los proveed
           <div className="absolute inset-0 bg-gradient-to-r from-[#DC2626]/80 via-[#F59E0B]/60 to-[#2563EB]/80"></div>
         </div>
         
-        <div className="relative z-10 text-center text-white px-4 max-w-6xl mx-auto">
-          <h1 className="mb-6 animate-fade-in">Blog Tecnológico</h1>
+        <div className="relative z-10 text-center text-white w-full px-4 flex flex-col items-center justify-center">
+          <div className="max-w-4xl">
+          <h1 className="mb-6 animate-fade-in">Servicios en la Nube en la Vida Cotidiana y su Importancia Actual.</h1>
           <p className="mb-12 text-xl animate-fade-in-delayed">
             Un espacio dedicado a explorar la innovación tecnológica, computación en la nube y transformación digital en la educación superior
           </p>
@@ -431,9 +432,11 @@ La nube puede ser más segura que almacenar datos localmente, ya que los proveed
               <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
                 <BookOpen className="w-6 h-6 text-white" />
               </div>
-              <h3 className="text-lg font-semibold mb-2">Artículos Especializados</h3>
-              <p className="text-white/90 text-sm">
-                Contenido técnico detallado sobre servicios en la nube y tendencias digitales
+              <h3 className="text-lg font-semibold mb-2">Participantes</h3>
+              <p className="text-white/90 text-sm"> 
+                 <a href="mailto:STERLING.SOZA25@est.uanleon.edu.ni ">Sterling Sofía Soza Sánchez</a>
+                 <br />
+                 Diseño, investigador y redactor.
               </p>
             </div>
 
@@ -441,9 +444,9 @@ La nube puede ser más segura que almacenar datos localmente, ya que los proveed
               <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Users className="w-6 h-6 text-white" />
               </div>
-              <h3 className="text-lg font-semibold mb-2">Comunidad Académica</h3>
+              <h3 className="text-lg font-semibold mb-2">Objetivo General del Blog</h3>
               <p className="text-white/90 text-sm">
-                Espacio para estudiantes, profesores e investigadores en tecnología educativa
+                Mostrar cómo los servicios en la nube forman parte de la vida diaria y por qué son importantes, explicando de manera sencilla sus usos, beneficios y cuidados básicos.
               </p>
             </div>
 
@@ -451,25 +454,29 @@ La nube puede ser más segura que almacenar datos localmente, ya que los proveed
               <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Award className="w-6 h-6 text-white" />
               </div>
-              <h3 className="text-lg font-semibold mb-2">Innovación Continua</h3>
-              <p className="text-white/90 text-sm">
-                Exploramos las últimas tendencias en tecnología y su impacto en la educación
-              </p>
+              <img
+                  src="/sofia.jpg"
+                  alt="sofia"
+                  className="w-6 md:w-8 h-6 md:h-8 rounded-full object-cover mx-auto"
+              />
             </div>
           </div>
-
-          <button
-            onClick={() => {
-              const element = document.getElementById("articulos");
-              if (element) element.scrollIntoView({ behavior: "smooth" });
-            }}
-            className="bg-white text-[#DC2626] px-8 py-3 rounded-lg hover:bg-gray-100 transition-colors hover:scale-105 transform duration-200"
-          >
-            Explorar Artículos
-          </button>
+          {/* Botón centrado */}
+            <div className="flex justify-center">
+              <button
+                onClick={() => {
+                  const element = document.getElementById("articulos");
+                  if (element) element.scrollIntoView({ behavior: "smooth" });
+                }}
+                className="bg-white text-[#DC2626] px-8 py-3 rounded-lg hover:bg-gray-100 transition-colors hover:scale-105 transform duration-200"
+              >
+                Explorar Artículos
+              </button>
+            </div>
+          </div>
         </div>
       </section>
-
+    
       {/* Sobre Nosotros Section */}
       <section id="sobre-nosotros" className="py-20 px-4 bg-white">
         <div className="max-w-7xl mx-auto">
