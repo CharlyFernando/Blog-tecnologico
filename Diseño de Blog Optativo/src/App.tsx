@@ -425,18 +425,17 @@ La nube puede ser más segura que almacenar datos localmente, ya que los proveed
           <p className="mb-12 text-xl animate-fade-in-delayed">
             Un espacio dedicado a explorar la innovación tecnológica, computación en la nube y transformación digital en la educación superior
           </p>
-
           {/* Feature Cards */}
           <div className="grid md:grid-cols-3 gap-6 mb-12">
             <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20 animate-slide-up">
               <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
                 <BookOpen className="w-6 h-6 text-white" />
               </div>
-              <h3 className="text-lg font-semibold mb-2">Participantes</h3>
               <p className="text-white/90 text-sm"> 
-                 <a href="mailto:STERLING.SOZA25@est.uanleon.edu.ni ">Sterling Sofía Soza Sánchez</a>
-                 <br />
+                 <h4>Sterling Sofía Soza Sánchez</h4>
                  Diseño, investigador y redactor.
+                 <br />
+                 <a href="mailto:STERLING.SOZA25@est.uanleon.edu.ni ">Click para contactarme</a>
               </p>
             </div>
 
